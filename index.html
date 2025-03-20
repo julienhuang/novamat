@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #e0f7ff;
+            padding: 80px 20px 20px;
+            color: #000;
+        }
+        .sidebar h2 {
+            color: #ff0000;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 8px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .content {
+            flex: 1;
+            padding: 100px 20px 20px;
+            border-left: 2px solid #00aaff;
+        }
+        .content h1 {
+            color: #ff0000;
+        }
+        .content p {
+            color: #333;
+        }
+        .product-image {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #00aaff;
+            z-index: 1000;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Novamat Logo.png" alt="NOVAMAT Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCT SERIES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </header>
+    
+    <div class="sidebar">
+        <h2>產品類別</h2>
+        <ul>
+            <li><a href="#">感光劑</a></li>
+            <li><a href="#">負型光阻用樹脂</a></li>
+            <li><a href="#">正型光阻用樹脂</a></li>
+            <li><a href="#">特殊添加劑</a></li>
+            <li><a href="#">半導體材料</a></li>
+            <li><a href="#">特殊聚合物</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <h1>聚苯醚樹脂 8824</h1>
+        <p>聚苯醚樹脂 8824 是一種基於聚苯醚改性的低分子量材料，雙官能基低聚物，具有優異的低介電及低吸濕性。</p>
+        <p>主要應用領域為電子封裝，包括 PCB 層壓板、覆銅層壓板、無環氧預浸料和粘合劑。</p>
+        <img src="chemical-structure.png" alt="化學結構" class="product-image">
+    </div>
+</body>
+</html>
